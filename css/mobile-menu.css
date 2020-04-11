@@ -72,10 +72,6 @@ nav ul li a:hover {
         padding: 0 .8em;
     }
 
-    .gray-container ul {
-        display: flex;
-    }
-
     nav ul {
         width: 40%;
     }
@@ -86,11 +82,11 @@ nav ul li a:hover {
         margin-bottom: 15%;
     }
 
-    .green-container ul {
-        margin: 0 0 4% 0;
+    .gray-container ul {
+        display: flex;
     }
 
-    .gray-container ul {
+    .green-container ul {
         margin: 0 0 4% 0;
     }
 }
@@ -114,6 +110,14 @@ nav ul li a:hover {
         margin: 0 auto 13% auto;
     }
 
+    .gray-container ul {
+        margin: 0 0 4% 0;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+
     nav ul {
         position: inherit;
         width: auto;
@@ -132,6 +136,7 @@ nav ul li a:hover {
         background: inherit;
         text-align: right;
         padding: 1em 2em;
+        width: 60%;
     }
 
     nav ul li a:hover {

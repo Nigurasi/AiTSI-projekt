@@ -54,6 +54,8 @@ header {
 
 .main-photo {
     width: 100%;
+    position: relative;
+    z-index: -1;
 }
 
 .figure-photo {
