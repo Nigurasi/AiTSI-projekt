@@ -1,0 +1,193 @@
+.main-photo {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.figure-photo {
+    width: 50%;
+}
+
+h1, .subhead {
+    position: relative;
+    z-index: 3;
+}
+
+.subhead {
+    font-size: 1.1em;
+}
+
+.green-container {
+    width: 100%;
+    background-color: green;
+    color: white;
+    margin: -1em 0 0;
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+
+.green-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+
+}
+
+.green-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    top: -80px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.green-container ul {
+    transform: skewY(2deg);
+}
+
+.green-container ul li {
+    margin-bottom: 3em;
+
+}
+
+.green-container img {
+    width: 30%;
+}
+
+.green-container ul li p {
+    padding: 0 .5em;
+    font-size: 0.8em;
+}
+
+.gray-container {
+    background: #F6F6F6;
+    padding: 4em 0 2em;
+    margin-top: -2em;
+}
+
+.gray-container ul li {
+    margin-bottom: 2em;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+blockquote {
+    font-size: 0.9em;
+}
+
+figcaption {
+    font-weight: bold;
+    color: green;
+}
+
+.gray-container img {
+    object-fit: cover;
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.gray-container h2 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 7%;
+}
+
+.volunteer {
+    background-color: lightgreen;
+    width: calc(100% - 1em);
+    display: block;
+    color: white;
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+.volunteer:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 650px) {
+    .main-photo {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .subhead {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .green-container {
+        margin: 0;
+    }
+
+    .green-container img {
+        width: 20%;
+    }
+
+    .green-container ul {
+        display: flex;
+        margin-top: -1em;
+        align-items: center;
+    }
+
+    .green-container ul li {
+        margin-bottom: 0;
+    }
+
+    .green-container ul li p {
+        padding: 0 .8em;
+    }
+}
+
+@media only screen and (min-width: 875px) {
+    .subhead {
+        margin-bottom: 15%;
+    }
+
+    .gray-container ul {
+        display: flex;
+    }
+
+    .green-container ul {
+        margin: 0 0 4% 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .volunteer {
+        width: 50%;
+    }
+
+    .gray-container ul {
+        margin: 0 0 4% 0;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+}
