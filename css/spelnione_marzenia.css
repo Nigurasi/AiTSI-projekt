@@ -1,0 +1,68 @@
+.subcontainer img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 5%;
+}
+
+.filter button {
+    padding: 1em;
+    background: rgb(71, 71, 71);
+    border: black;
+    color: white;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.filter button:hover {
+    text-decoration: underline;
+}
+
+.kids-list {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.kids-list li {
+    flex: 1 0 50%;
+    padding: 1em 0;
+}
+
+.subcontainer {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.subcontainer .title {
+    text-decoration: underline;
+    padding: 0 1em;
+}
+
+.text-input {
+    width: 50%;
+    margin-right: 1em;
+}
+
+.radio-btn {
+    font-size: 0.8em;
+}
+
+.nav-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.kid-list-btn {
+    padding: 0 1em;
+    margin: 2% 10%;
+    background: rgb(71, 71, 71);
+    border: black;
+    padding: 1em;
+    color: white;
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+.kid-list-btn:hover {
+    text-decoration: underline;
+}

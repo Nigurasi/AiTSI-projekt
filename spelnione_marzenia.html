@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/spelnione_marzenia.css">
 </head>
 <body>
     <div class="container">
@@ -26,6 +27,169 @@
         </header>
     </div>
 
+    <div class="container filter">
+        <input class="text-input" type="text" placeholder="Filtruj marzycieli">
+        <label>Czy spełnione?</label>
+        <label class="radio-btn"><input type="radio" name="dream" id="Tak" value="Tak"> Tak</label>
+        <label class="radio-btn"><input type="radio" name="dream" id="Nie" value="Nie"> Nie</label>
+        <label class="radio-btn"><input type="radio" name="dream" id="All" value="All"> Pokaż wszystkich</label>
+        <button onclick="filterDreamers()">Filtruj</button>
+    </div>
+
+    <div class="container">
+        <ul class="kids-list">
+            <li>
+                <h3>John Doe</h3>
+                <div class="subcontainer">
+                    <img src="images/kid5.jpg" alt="Zdjęcie kucającego chłopca">
+                    <div>
+                        <div class="subcontainer">
+                            <p  class="title">Marzenie</p>
+                            <p>własny plac zabaw</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Zdiagnozowana choroba</p>
+                            <p>Białaczka</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Skąd pochodzi</p>
+                            <p>Warszawa</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Czy spełnione</p>
+                            <p>Tak</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>Jane Doe</h3>
+                <div class="subcontainer">
+                    <img src="images/kid6.jpg" alt="Zdjęcie dziewczynki">
+                    <div>
+                        <div class="subcontainer">
+                            <p  class="title">Marzenie</p>
+                            <p>własny plac zabaw</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Zdiagnozowana choroba</p>
+                            <p>Białaczka</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Skąd pochodzi</p>
+                            <p>Warszawa</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Czy spełnione</p>
+                            <p>Nie</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>Jane Doe</h3>
+                <div class="subcontainer">
+                    <img src="images/kid7.jpg" alt="Zdjęcie uśmiechającej się dziewczynki">
+                    <div>
+                        <div class="subcontainer">
+                            <p  class="title">Marzenie</p>
+                            <p>własny plac zabaw</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Zdiagnozowana choroba</p>
+                            <p>Białaczka</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Skąd pochodzi</p>
+                            <p>Warszawa</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Czy spełnione</p>
+                            <p>Tak</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <h3>Jane Doe</h3>
+                <div class="subcontainer">
+                    <img src="images/kid8.jpg" alt="Zdjęcie dziewczynki">
+                    <div>
+                        <div class="subcontainer">
+                            <p  class="title">Marzenie</p>
+                            <p>własny plac zabaw</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Zdiagnozowana choroba</p>
+                            <p>Białaczka</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Skąd pochodzi</p>
+                            <p>Warszawa</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Czy spełnione</p>
+                            <p>Nie</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>John Doe</h3>
+                <div class="subcontainer">
+                    <img src="images/kid9.jpg" alt="Zdjęcie uśmiechającej się dziewczynki">
+                    <div>
+                        <div class="subcontainer">
+                            <p  class="title">Marzenie</p>
+                            <p>własny plac zabaw</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Zdiagnozowana choroba</p>
+                            <p>Białaczka</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Skąd pochodzi</p>
+                            <p>Warszawa</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Czy spełnione</p>
+                            <p>Tak</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <h3>Jane Doe</h3>
+                <div class="subcontainer">
+                    <img src="images/kid2.jpg" alt="Zdjęcie uśmiechającej się dziewczynki">
+                    <div>
+                        <div class="subcontainer">
+                            <p  class="title">Marzenie</p>
+                            <p>własny plac zabaw</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Zdiagnozowana choroba</p>
+                            <p>Białaczka</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Skąd pochodzi</p>
+                            <p>Warszawa</p>
+                        </div>
+                        <div class="subcontainer">
+                            <p  class="title">Czy spełnione</p>
+                            <p>Nie</p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="nav-btns">
+        <a href="#" class="kid-list-btn prev"> Poprzednie</a>
+        <a href="#" class="kid-list-btn next"> Następne</a>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="container">
@@ -40,5 +204,34 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function filterDreamers() {
+            var radio_dream = document.querySelector("input[name=dream]:checked").value;
+            console.log(radio_dream);
+        }
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+        // TODO: dodać ciasteczka do zapisywania radio buttona
+
+        var radioValue = document.cookie;
+        console.log(document.cookie);
+        if (radioValue === null){
+            
+            document.getElementById('All').checked = true;
+        }
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>

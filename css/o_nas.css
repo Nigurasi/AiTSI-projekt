@@ -6,8 +6,10 @@ section h2 {
     text-align: center;
 }
 
-section p {
-    text-align: center;
+.about-us-container section p {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: justify;
 }
 
 @media only screen and (min-width: 1024px) {
