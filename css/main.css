@@ -57,15 +57,15 @@ header {
     background: #3D444A;
     color: white;
     padding: 3em 0;
-    border-top-right-radius: 40px;
-    transform: skewY(2deg);
+    /*border-top-right-radius: 40px;
+    transform: skewY(2deg);*/
 }
 
-.footer-container .container {
+/*.footer-container .container {
     transform: skewY(-2deg);
-}
+}*/
 
-.footer-container:before {
+/*.footer-container:before {
     content: "";
     width: 40px;
     height: 40px;
@@ -86,7 +86,7 @@ header {
     left: 0;
     z-index: -1;
     border-radius: 50%;
-}
+}*/
 
 .footer-urls {
     margin: 0 auto;

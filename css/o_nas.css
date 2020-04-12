@@ -1,0 +1,28 @@
+section img {
+    width: 100%
+}
+
+section h2 {
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-us-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-us-container section {
+        margin: 0 1em;
+        padding-bottom: 2em;
+    }
+
+    section img {
+        width: 700px;
+    }
+}

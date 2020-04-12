@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/o_nas.css">
 </head>
 <body>
     <div class="container">
@@ -26,6 +27,28 @@
         </header>
     </div>
 
+    <div class="about-us-container">
+        <section>
+            <img src="images/kids_group.jpg" alt="Grupa uśmiechniętych dzieci">
+        </section>
+        <section>
+            <h2>O nas</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rem! Doloribus, dolor! 
+                Minus iusto necessitatibus adipisci numquam ratione cumque. Eaque nostrum iste itaque 
+                reiciendis incidunt iusto ex cum, rerum eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rem! Doloribus, dolor! 
+                Minus iusto necessitatibus adipisci numquam ratione cumque. Eaque nostrum iste itaque 
+                reiciendis incidunt iusto ex cum, rerum eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rem! Doloribus, dolor! 
+                Minus iusto necessitatibus adipisci numquam ratione cumque. Eaque nostrum iste itaque 
+                reiciendis incidunt iusto ex cum, rerum eius!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rem! Doloribus, dolor! 
+                Minus iusto necessitatibus adipisci numquam ratione cumque. Eaque nostrum iste itaque 
+                reiciendis incidunt iusto ex cum, rerum eius!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rem! Doloribus, dolor! 
+                Minus iusto necessitatibus adipisci numquam ratione cumque. Eaque nostrum iste itaque 
+                reiciendis incidunt iusto ex cum, rerum eius!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rem! Doloribus, dolor! 
+                Minus iusto necessitatibus adipisci numquam ratione cumque. Eaque nostrum iste itaque 
+                reiciendis incidunt iusto ex cum, rerum eius!</p>
+        </section>
+    </div>
+
     <footer>
         <div class="footer-container">
             <div class="container">
@@ -40,5 +63,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
