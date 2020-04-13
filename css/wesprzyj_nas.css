@@ -1,0 +1,71 @@
+.temporary-notification {
+    border: 2px green solid;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5%;
+    background: rgb(159, 255, 159);
+}
+
+.green-container {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.KRS-number {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.container .kid-funds-img {
+    width: 250px;
+}
+
+.other-funds li div {
+    margin: auto 0;
+}
+
+.przelew-btn {
+    background: rgb(0, 82, 0);
+    text-decoration: none;
+    padding: 1em;
+    color: white;
+}
+
+.przelew-btn:hover {
+    text-decoration: underline;
+}
+
+.subcontainer .title {
+    text-decoration: underline;
+}
+
+.subcontainer p {
+    margin: 0 1em;
+}
+
+.subcontainer a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+.subcontainer a:hover {
+    text-decoration: underline;
+}
+
+.other-funds li {
+    padding: 1em 0;
+}
+
+@media only screen and (min-width: 650px) {
+    .subcontainer {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .other-funds li {
+        display: flex;
+    }
+}
