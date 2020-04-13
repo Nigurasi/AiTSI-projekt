@@ -135,7 +135,6 @@ nav ul li a:hover {
         position: inherit;
         width: auto;
         background: none;
-        height: 0;
         display: flex;
         padding-top: 0;
     }
