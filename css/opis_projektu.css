@@ -1,3 +1,7 @@
 .description {
     margin-bottom: 3em;
 }
+
+.description p {
+    text-align: justify;
+}

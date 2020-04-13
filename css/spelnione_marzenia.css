@@ -11,31 +11,19 @@
     color: white;
     border-radius: 5%;
     text-decoration: none;
+    margin: 1% 0;
 }
 
 .filter button:hover {
     text-decoration: underline;
 }
 
-.kids-list {
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.kids-list li {
-    flex: 1 0 50%;
-    padding: 1em 0;
-}
-
-.subcontainer {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
 .subcontainer .title {
     text-decoration: underline;
-    padding: 0 1em;
+}
+
+.subcontainer p {
+    margin: 0 1em;
 }
 
 .text-input {
@@ -65,4 +53,22 @@
 
 .kid-list-btn:hover {
     text-decoration: underline;
+}
+
+@media only screen and (min-width: 875px) {
+    .subcontainer {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .kids-list {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    
+    .kids-list li {
+        flex: 1 0 50%;
+        padding: 1em 0;
+    }
 }
