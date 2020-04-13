@@ -206,21 +206,45 @@
     </footer>
 
     <script>
+        function setCookie(cookie_name, cookie_value, expire_val_sec) {
+            var d = new Date();
+            d.setTime(d.getTime() + (expire_val_sec*1000));
+            var expires = "expires="+ d.toUTCString();
+            document.cookie = cookie_name + "=" + cookie_value + ";" + expires + ";" + document.cookie;
+        }
+
+        function getCookie(cookie_name) {
+            var name = cookie_name + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for(var i = 0; i <ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        
         function filterDreamers() {
             var radio_dream = document.querySelector("input[name=dream]:checked").value;
-            console.log(radio_dream);
+            setCookie('dream', radio_dream, 60);
         }
 
         var menu = document.getElementById('menu');
         var nav = document.getElementById('nav');
         var exit = document.getElementById('exit');
-        // TODO: dodać ciasteczka do zapisywania radio buttona
 
-        var radioValue = document.cookie;
-        console.log(document.cookie);
-        if (radioValue === null){
-            
+        var radio_dream = getCookie("dream");
+        if (radio_dream === ""){
             document.getElementById('All').checked = true;
+            setCookie('dream', 'All', 60);
+        } 
+        else {
+            document.getElementById(radio_dream).checked = true;
         }
 
         menu.addEventListener('click', function(e){
