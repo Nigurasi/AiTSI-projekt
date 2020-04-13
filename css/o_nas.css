@@ -19,12 +19,12 @@ section h2 {
         align-items: center;
     }
 
-    .about-us-container section {
+    .about-us-container .about-us-section {
         margin: 0 1em;
         padding-bottom: 2em;
     }
 
-    section img {
+    .about-us-section img {
         width: 700px;
     }
 }
