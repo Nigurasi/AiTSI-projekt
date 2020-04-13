@@ -1,12 +1,12 @@
-section img {
+.about-us-section img {
     width: 100%
 }
 
-section h2 {
+.about-us-section h2 {
     text-align: center;
 }
 
-.about-us-container section p {
+.about-us-container .about-us-section p {
     padding-left: 1em;
     padding-right: 1em;
     text-align: justify;
