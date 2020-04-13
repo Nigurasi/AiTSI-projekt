@@ -1,6 +1,6 @@
 # Wstęp
 
-Link do strony: https://nigurasi.github.io/AiTSI-projekt/wesprzyj_nas.html
+Link do strony: https://nigurasi.github.io/AiTSI-projekt/
 
 Link do repozytorium: https://github.com/Nigurasi/AiTSI-projekt
 
