@@ -19,16 +19,14 @@
                     <li id="exit" class="exit-btn hide-computer"><img src="images/exit-color.svg" alt="Zamknij menu na telefony"></li>
                     <li><a href="index.html">Strona główna</a></li>
                     <li><a href="spelnione_marzenia.html">Spełnione marzenia</a></li>
-                    <li><a href="wesprzyj-nas.html">Wesprzyj nas</a></li>
-                    <li><a href="o-nas.html">O nas</a></li>
+                    <li><a href="wesprzyj_nas.html">Wesprzyj nas</a></li>
+                    <li><a href="o_nas.html">O nas</a></li>
                     <li><a href="opis_projektu.html">AiTSI - opis projektu</a></li>
                 </ul>
             </nav>
         </header>
     </div>
 
-    <!--Główne konto bardziej wyszczególnione -->
-    <!-- Konta poszczególnych dzieci-->
     <div class="temporary-notification">
         <h2>Przekaż 1% podatku!</h2>
         <p>Spełnij marzenia naszych podopiecznych! Wpisz poniższy</p>
@@ -40,7 +38,13 @@
         <div class="green-container">
             <h2>Wesprzyj nas</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, asperiores. Perferendis quidem sed incidunt illo, nisi repellendus explicabo odio, nihil, nam vero doloribus commodi nulla itaque sapiente consequuntur voluptatum voluptatibus?</p>
-            <a href="#" class="przelew-btn">Link do przelewów</a>
+            <a href="#" class="funds-btn">Link do przelewów</a>
+        </div>
+
+        <div class="grey-container">
+            <h2>Chcesz zostać wolontariuszem?</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, accusantium fuga dolorem ut nesciunt cupiditate est dolores illum reprehenderit repudiandae maiores assumenda quia sapiente non. Ratione quaerat inventore modi facere!</p>
+            <a href="#" class="funds-btn">Wypełnij formularz</a>
         </div>
     
         <div class="container">
@@ -105,5 +109,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
 </body>
 </html>
